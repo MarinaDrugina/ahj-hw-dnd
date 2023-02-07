@@ -1,4 +1,4 @@
-import CardCreator from "./CardCreator.js";
+import CardCreator from './CardCreator';
 
 export default class AddNewCardWidget {
   static createNewCardWidget(className) {

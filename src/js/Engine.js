@@ -1,7 +1,7 @@
-import AddNewCardWidget from './AddNewCardWidget.js';
-import CardCreator from './CardCreator.js';
-import Popuper from './Popuper.js';
-import Rotate from './Rotate.js';
+import AddNewCardWidget from './AddNewCardWidget';
+import CardCreator from './CardCreator';
+import Popuper from './Popuper';
+import Rotate from './Rotate';
 
 export default class Engine {
   constructor() {
@@ -59,7 +59,7 @@ export default class Engine {
       dragged = event.target;
       ghosted = event.target.cloneNode(true);
       securePlace = event.target.cloneNode(true);
-      securePlace.style.opacity = "0";
+      securePlace.style.opacity = '0';
 
       const shiftX = event.clientX - dragged.getBoundingClientRect().left
        + board.getBoundingClientRect().left;
@@ -146,12 +146,12 @@ export default class Engine {
         } else if (closest.tagName === 'FOOTER') {
           parentOfTheClosest.insertBefore(dragged, parentOfTheClosest.lastChild);
         } else if (closest.tagName === 'SECTION') {
-            closest.firstChild.after(dragged);
+          closest.firstChild.after(dragged);
         }
       } else {
         return;
       }
-      if(securePlace){
+      if (securePlace) {
         securePlace.remove();
       }
       this.restorePointerEvents();

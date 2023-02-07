@@ -7,23 +7,36 @@
   },
   "rules": {
     "no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
+        "error",
+        "LabeledStatement",
+        "WithStatement"
     ],
-    "import/extensions": [ 
-        "error", 
-        "ignorePackages", 
-        { "": "never" } 
+    "no-undef": [
+        "off"
     ],
-    "no-unused-vars": "off",
-    "no-console": "off",
-    "no-plusplus": "off",
-    "no-new": 0,
     "class-methods-use-this": [
-      "error", { 
-        "exceptMethods": ["createWindow"] 
-      }
+        "off"
+    ],
+    "no-unused-expressions": [
+        "off"
+    ],
+    "no-unused-vars": [
+        "off"
+    ],
+    "import/no-extraneous-dependencies": [
+        "warn"
+    ],
+    "no-new": [
+        "warn"
+    ],
+    "no-param-reassign": [
+        "warn"
+    ],
+    "guard-for-in": [
+        "warn"
+    ],
+    "no-shadow": [
+        "warn"
     ]
-  }
+}
 }

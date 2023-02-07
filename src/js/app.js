@@ -1,7 +1,7 @@
-import ContentBoard from './ContentBoard.js';
-import TaskColumns from './TaskColumns.js';
-import Engine from './Engine.js';
-import Info from './Info.js';
+import ContentBoard from './ContentBoard';
+import TaskColumns from './TaskColumns';
+import Engine from './Engine';
+import Info from './Info';
 
 new ContentBoard();
 new TaskColumns();
