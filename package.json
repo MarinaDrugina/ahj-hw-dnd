@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "lint": "eslint . --fix",
     "test": "jest --passWithNoTests",
+    "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/"
   },
   "repository": {
